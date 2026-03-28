@@ -11,7 +11,7 @@ else:
     st.error("Secrets mein API Key nahi mili!")
 
 # 2. Model Selection (Direct name use kar rahe hain)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-pro')
 
 st.title("AI Resume Scout")
 st.write("Upload your resume text and get AI job suggestions (Free Version)")
