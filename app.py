@@ -1,9 +1,11 @@
 import streamlit as st
 import google.generativeai as genai
 
-# Gemini API setup (Secrets se key uthayega)
+# Gemini API setup
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-model = genai.GenerativeModel('gemini-1.5-flash')
+
+# Model name update kiya hai yahan
+model = genai.GenerativeModel('models/gemini-1.5-flash')
 
 st.title("AI Resume Scout")
 st.write("Upload your resume text and get AI job suggestions (Free Version)")
