@@ -11,7 +11,7 @@ st.set_page_config(page_title="BharatPurity AI - Pro", layout="wide")
 GEMINI_API_KEY = st.secrets.get("GEMINI_API_KEY", "")
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-1.5-flash-latest')
 else:
     st.error("Please set your GEMINI_API_KEY in Stitch Secrets.")
 
